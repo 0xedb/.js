@@ -11,7 +11,6 @@ func main() {
 		fmt.Println(req.UserAgent())
 		fmt.Println(strings.ToLower(req.Method))
 		fmt.Println(req.Proto)
-
 		res.WriteHeader(404)
 		res.Write([]byte("hello"))
 	})
